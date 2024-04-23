@@ -1,0 +1,189 @@
+header {
+    background-color: #5D04D9;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos para a ul */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para a li */
+.Nome_Nav {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos para o coração */
+.coracao {
+    margin-left: 5px;
+    font-size: 24px;
+}
+
+/* Estilos para a seção Meus Produtos */
+.Meus_Produtos {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Estilos para os cards */
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+}
+
+/* Estilos para cada card individual */
+.card {
+    width: calc(30% - 20px);
+    /* 33.33% para cada card e 20px de gap */
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    /* Espaçamento entre os cards */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Estilos para a imagem do produto */
+.card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para o nome do produto */
+.card h2 {
+    margin-bottom: 10px;
+}
+
+/* Estilos para o valor do produto */
+.card p {
+    margin-bottom: 20px;
+}
+
+/* Estilos para o ícone de lata de lixo */
+.card .delete-icon {
+    margin-left: auto;
+    cursor: pointer;
+    color: red;
+}
+
+/* Estilos para a seção de adicionar produtos */
+.adicionar_produtos {
+    width: calc(33.33% - 15px);
+    /* 33.33% para o formulário e 20px de gap */
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    /* Espaçamento abaixo do formulário */
+}
+
+/* Estilos para o cabeçalho "Adicionar Produtos" */
+.adicionar_produtos h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #333333;
+}
+
+/* Estilos para o formulário dentro da div de adicionar produtos */
+.adicionar_produtos form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Estilos para as entradas de texto do formulário */
+.adicionar_produtos input[type="text"] {
+    padding: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+}
+
+/* Estilos para o campo de upload de imagem */
+.custom-file-input {
+    position: relative;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.custom-file-input input[type="file"] {
+    position: absolute;
+    font-size: 100px;
+    opacity: 0;
+    right: 0;
+    top: 0;
+
+}
+
+.custom-file-input label {
+    display: block;
+    padding: 10px 15px;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #dddddd;
+}
+
+.custom-file-input label:hover {
+    background-color: #3B026B;
+}
+
+/* Estilos para os botões do formulário */
+.adicionar_produtos button {
+    padding: 10px;
+    background-color: #5D04D9;
+    color: #ffffff;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos para os botões do formulário quando passa o mouse */
+.adicionar_produtos button:hover {
+    background-color: #3B026B;
+}
+
+@media screen and (max-width: 768px) {
+
+    /* Estilos específicos para dispositivos móveis (max-width: 768px) */
+    .Meus_Produtos {
+        flex-direction: column;
+        /* Altera para coluna */
+        align-items: center;
+        /* Centraliza os itens na coluna */
+    }
+
+    .card,
+    .adicionar_produtos {
+        width: 100%;
+        /* Largura total em dispositivos móveis */
+    }
+
+    .adicionar_produtos {
+        order: -1;
+        /* Define a ordem para -1 para que o formulário apareça primeiro */
+        margin-bottom: 0;
+        /* Remove o espaçamento abaixo do formulário */
+    }
+
+}

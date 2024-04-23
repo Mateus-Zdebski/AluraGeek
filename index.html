@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="Nome_Nav">Minha Loja <span class="coracao">&#x2764;</span></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="Meus_Produtos">
+        <div class="cards">
+            <div class="card">
+                <img src="/unsplash_6FDXGY9J6y4.png" alt="Produto 1">
+                <h2>Nome do Produto 1</h2>
+                <p>R$ 99,99</p>
+                <span class="delete-icon">&#x1f5d1;</span>
+            </div>
+            <div class="card">
+                <img src="/Skill.png" alt="Produto 2">
+                <h2>Nome do Produto 2</h2>
+                <p>R$ 149,99</p>
+                <span class="delete-icon">&#x1f5d1;</span>
+            </div>
+            <div class="card">
+                <img src="/unsplash_6FDXGY9J6y4.png" alt="Produto 1">
+                <h2>Nome do Produto 1</h2>
+                <p>R$ 99,99</p>
+                <span class="delete-icon">&#x1f5d1;</span>
+            </div>
+            <div class="card">
+                <img src="/Skill.png" alt="Produto 2">
+                <h2>Nome do Produto 2</h2>
+                <p>R$ 149,99</p>
+                <span class="delete-icon">&#x1f5d1;</span>
+            </div>
+
+        </div>
+
+        <div class="adicionar_produtos">
+            <h1>Adicionar Produtos</h1>
+            <form>
+                <!-- No seu HTML -->
+                <form id="formNovoProduto">
+                    <input type="text" id="nomeProduto" placeholder="Nome">
+                    <input type="text" id="valorProduto" placeholder="Valor">
+                    <div class="custom-file-input">
+                        <label for="imagem_upload">Escolher Imagem</label>
+                        <input type="file" id="imagem_upload" accept="image/*">
+                    </div>
+                    <button type="submit">Guardar</button>
+                    <button type="reset">Limpar</button>
+                </form>
+        </div>
+
+        <div class="cards">
+            <!-- Cards adicionais do lado direito -->
+        </div>
+    </div>
+
+    <script>
+        // Utilizando a função getProdutos
+        async function mostrarProdutos() {
+            const produtos = await getProdutos();
+            console.log(produtos); // Exemplo de como utilizar os dados recebidos
+            // Aqui você pode manipular os dados e atualizar a interface conforme necessário
+        }
+
+        // Chamando a função para mostrar os produtos ao carregar a página
+        window.onload = mostrarProdutos;
+    </script>
+    <!-- No seu HTML -->
+    <script src="js/api.js"></script>
+    <script src="js/criarProduto.js"></script>
+    <script src="js/criarProduto.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/listarProdutos.js"></script>
+
+</body>
+
+</html>

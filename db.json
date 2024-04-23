@@ -1,0 +1,14 @@
+[
+  {
+    "id": "1",
+    "nome": "Nome do Produto 1",
+    "valor": 99.99,
+    "imagem": "/unsplash_6FDXGY9J6y4.png"
+  },
+  {
+    "id": "2",
+    "nome": "Nome do Produto 2",
+    "valor": 149.99,
+    "imagem": "/Skill.png"
+  }
+]

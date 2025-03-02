@@ -62,6 +62,3 @@ Este projeto é um catálogo de produtos interativo, onde os usuários podem vis
 4. **Acesse o site no navegador** e adicione produtos!  
 
 ---
-
----
-
